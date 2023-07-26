@@ -11,3 +11,4 @@ def download_csv(url):
     download_location = "static/" + str(datetime.utcnow())
     os.makedir(download_location)
     gdown.download(prefix+file_id, output=download_location+"/")
+    return download_location
